@@ -107,3 +107,26 @@ print("\nRandom Forest Accuracy:", rf_accuracy)
 print("\nModel Accuracy Comparison:")
 print("Decision Tree Accuracy:", accuracy)
 print("Random Forest Accuracy:", rf_accuracy)
+# Part 5: Feature Importance
+
+import matplotlib.pyplot as plt
+
+# Get feature importance from Random Forest
+feature_importance = pd.Series(
+    rf_model.feature_importances_,
+    index=X.columns
+).sort_values(ascending=False)
+
+# Display feature importance
+print("\nFeature Importance:")
+print(feature_importance)
+
+# Plot feature importance
+plt.figure(figsize=(10, 6))
+feature_importance.plot(kind="bar")
+plt.title("Feature Importance - Random Forest")
+plt.xlabel("Features")
+plt.ylabel("Importance")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
