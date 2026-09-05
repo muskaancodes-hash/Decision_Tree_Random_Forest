@@ -156,3 +156,27 @@ print(rf_scores)
 
 print("\nRandom Forest Mean CV Accuracy:")
 print(rf_scores.mean())
+# Part 7: Decision Tree Visualization
+
+from sklearn.tree import plot_tree
+import matplotlib.pyplot as plt
+
+# Create a limited-depth tree for visualization
+tree_visual = DecisionTreeClassifier(max_depth=3, random_state=42)
+
+# Train the tree
+tree_visual.fit(X_train, y_train)
+
+# Plot the Decision Tree
+plt.figure(figsize=(20, 10))
+
+plot_tree(
+    tree_visual,
+    feature_names=X.columns,
+    class_names=["No Disease", "Disease"],
+    filled=True,
+    rounded=True
+)
+
+plt.title("Decision Tree Visualization")
+plt.show()
