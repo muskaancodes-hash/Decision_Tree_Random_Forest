@@ -80,6 +80,25 @@ Random Forest is an ensemble learning method that combines multiple decision tre
 ### Result
 
 The accuracy of the Decision Tree and Random Forest models is compared to determine which model performs better on the Heart Disease dataset.
+## Part 5: Feature Importance
+
+In this step, the importance of individual features in the Random Forest model is analyzed.
+
+### Steps Performed
+
+* Extracted feature importance values from the Random Forest model.
+* Associated importance values with the corresponding feature names.
+* Sorted the features from most important to least important.
+* Displayed the feature importance values.
+* Created a bar chart to visualize feature importance.
+
+### Purpose
+
+Feature importance helps understand which input features have the greatest influence on the Random Forest model's predictions.
+
+### Result
+
+A feature importance chart is generated, showing the relative contribution of each feature to the Random Forest classification model.
 
 
 ### Purpose
