@@ -99,8 +99,66 @@ Feature importance helps understand which input features have the greatest influ
 ### Result
 
 A feature importance chart is generated, showing the relative contribution of each feature to the Random Forest classification model.
+## Part 6: Cross-Validation
+
+In this step, 5-fold cross-validation is used to evaluate the Decision Tree and Random Forest models.
+
+### Steps Performed
+
+* Applied 5-fold cross-validation to the Decision Tree model.
+* Applied 5-fold cross-validation to the Random Forest model.
+* Calculated accuracy for each fold.
+* Calculated the mean cross-validation accuracy.
+* Compared the performance of both models.
+
+### Purpose
+
+Cross-validation provides a more reliable evaluation of model performance by testing the models on different portions of the dataset.
+
+### Result
+
+The cross-validation scores and mean accuracy are calculated for both Decision Tree and Random Forest models. These results help determine which model provides better and more consistent performance.
+## Part 6: Cross-Validation
+
+In this step, 5-fold cross-validation is used to evaluate the Decision Tree and Random Forest models.
+
+### Steps Performed
+
+* Applied 5-fold cross-validation to the Decision Tree model.
+* Applied 5-fold cross-validation to the Random Forest model.
+* Calculated accuracy for each fold.
+* Calculated the mean cross-validation accuracy.
+* Compared the performance of both models.
+
+### Purpose
+
+Cross-validation provides a more reliable evaluation of model performance by testing the models on different portions of the dataset.
+
+### Result
+
+The cross-validation scores and mean accuracy are calculated for both Decision Tree and Random Forest models. These results help determine which model provides better and more consistent performance.
 
 
 ### Purpose
+## Part 6: Cross-Validation
+
+In this step, 5-fold cross-validation is used to evaluate the Decision Tree and Random Forest models.
+
+### Steps Performed
+
+* Applied 5-fold cross-validation to the Decision Tree model.
+* Applied 5-fold cross-validation to the Random Forest model.
+* Calculated accuracy for each fold.
+* Calculated the mean cross-validation accuracy.
+* Compared the performance of both models.
+
+### Purpose
+
+Cross-validation provides a more reliable evaluation of model performance by testing the models on different portions of the dataset.
+
+### Result
+
+The cross-validation scores and mean accuracy are calculated for both Decision Tree and Random Forest models. These results help determine which model provides better and more consistent performance.
+
 
 This step demonstrates how a Decision Tree can be used for heart disease classification and how its performance can be evaluated using standard classification metrics.
