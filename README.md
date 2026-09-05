@@ -40,6 +40,27 @@ In this step, a Decision Tree Classifier is trained using the Heart Disease data
 ### Result
 
 The Decision Tree achieved approximately **99% accuracy** on the test dataset.
+## Part 3: Overfitting and Tree Depth Control
+
+In this step, the effect of Decision Tree depth on model performance is analyzed.
+
+### Steps Performed
+
+* Tested different `max_depth` values.
+* Trained a Decision Tree for each depth.
+* Calculated training accuracy.
+* Calculated testing accuracy.
+* Compared training and testing performance.
+* Used the results to identify possible overfitting.
+
+### Purpose
+
+A Decision Tree can become too complex and memorize the training data, causing overfitting. Controlling the `max_depth` helps create a simpler model that can generalize better to unseen data.
+
+### Result
+
+The training and testing accuracy values for different tree depths are compared to understand the relationship between tree complexity and model performance.
+
 
 ### Purpose
 
