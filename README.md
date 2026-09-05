@@ -60,6 +60,26 @@ A Decision Tree can become too complex and memorize the training data, causing o
 ### Result
 
 The training and testing accuracy values for different tree depths are compared to understand the relationship between tree complexity and model performance.
+## Part 4: Random Forest Classifier
+
+In this step, a Random Forest Classifier is trained and its performance is compared with the Decision Tree model.
+
+### Steps Performed
+
+* Created a Random Forest Classifier.
+* Used 100 decision trees with `n_estimators=100`.
+* Trained the Random Forest using the training dataset.
+* Generated predictions on the test dataset.
+* Calculated Random Forest accuracy.
+* Compared Random Forest accuracy with Decision Tree accuracy.
+
+### Purpose
+
+Random Forest is an ensemble learning method that combines multiple decision trees. It generally provides better generalization and helps reduce overfitting compared with a single Decision Tree.
+
+### Result
+
+The accuracy of the Decision Tree and Random Forest models is compared to determine which model performs better on the Heart Disease dataset.
 
 
 ### Purpose
