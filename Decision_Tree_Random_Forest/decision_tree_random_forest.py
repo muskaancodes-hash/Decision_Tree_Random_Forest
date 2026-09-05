@@ -130,3 +130,29 @@ plt.ylabel("Importance")
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
+# Part 6: Cross-Validation
+
+from sklearn.model_selection import cross_val_score
+
+# Cross-validation for Decision Tree
+dt_scores = cross_val_score(
+    dt_model, X, y, cv=5, scoring="accuracy"
+)
+
+# Cross-validation for Random Forest
+rf_scores = cross_val_score(
+    rf_model, X, y, cv=5, scoring="accuracy"
+)
+
+# Display results
+print("\nDecision Tree Cross-Validation Scores:")
+print(dt_scores)
+
+print("\nDecision Tree Mean CV Accuracy:")
+print(dt_scores.mean())
+
+print("\nRandom Forest Cross-Validation Scores:")
+print(rf_scores)
+
+print("\nRandom Forest Mean CV Accuracy:")
+print(rf_scores.mean())
