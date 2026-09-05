@@ -82,3 +82,28 @@ for depth in depths:
         f"Training Accuracy = {train_accuracy:.4f}, "
         f"Testing Accuracy = {test_accuracy:.4f}"
     )
+    # Part 4: Random Forest Classifier
+
+from sklearn.ensemble import RandomForestClassifier
+
+# Create Random Forest model
+rf_model = RandomForestClassifier(
+    n_estimators=100,
+    random_state=42
+)
+
+# Train the model
+rf_model.fit(X_train, y_train)
+
+# Make predictions
+rf_pred = rf_model.predict(X_test)
+
+# Calculate Random Forest accuracy
+rf_accuracy = accuracy_score(y_test, rf_pred)
+
+print("\nRandom Forest Accuracy:", rf_accuracy)
+
+# Compare both models
+print("\nModel Accuracy Comparison:")
+print("Decision Tree Accuracy:", accuracy)
+print("Random Forest Accuracy:", rf_accuracy)
