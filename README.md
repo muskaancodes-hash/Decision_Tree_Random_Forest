@@ -24,3 +24,23 @@ This part focuses on loading and exploring the Heart Disease dataset using Pytho
 ## Purpose
 
 The purpose of this step is to understand the dataset before applying Decision Tree and Random Forest machine learning models.
+## Part 2: Decision Tree Classifier
+
+In this step, a Decision Tree Classifier is trained using the Heart Disease dataset.
+
+### Steps Performed
+
+* Separated features and target variable.
+* Split the dataset into training and testing sets.
+* Trained a Decision Tree Classifier.
+* Generated predictions on the test data.
+* Calculated model accuracy.
+* Generated a classification report.
+
+### Result
+
+The Decision Tree achieved approximately **99% accuracy** on the test dataset.
+
+### Purpose
+
+This step demonstrates how a Decision Tree can be used for heart disease classification and how its performance can be evaluated using standard classification metrics.
