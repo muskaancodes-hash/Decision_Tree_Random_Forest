@@ -58,3 +58,27 @@ print("\nDecision Tree Accuracy:", accuracy)
 # Classification report
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
+# Part 3: Analyze Overfitting and Control Tree Depth
+
+from sklearn.metrics import accuracy_score
+
+# Train Decision Trees with different maximum depths
+depths = [1, 2, 3, 4, 5, 6, 8, 10]
+
+print("\nTree Depth Analysis:")
+
+for depth in depths:
+    model = DecisionTreeClassifier(max_depth=depth, random_state=42)
+    model.fit(X_train, y_train)
+
+    train_pred = model.predict(X_train)
+    test_pred = model.predict(X_test)
+
+    train_accuracy = accuracy_score(y_train, train_pred)
+    test_accuracy = accuracy_score(y_test, test_pred)
+
+    print(
+        f"Depth {depth}: "
+        f"Training Accuracy = {train_accuracy:.4f}, "
+        f"Testing Accuracy = {test_accuracy:.4f}"
+    )
